@@ -1,0 +1,6 @@
+framework module Pods_swipeNews {
+  umbrella header "Pods-swipeNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
