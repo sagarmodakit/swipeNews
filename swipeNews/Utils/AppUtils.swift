@@ -42,6 +42,20 @@ class AppUtils {
         
     }
     
+    func timeAgoDateFromString(dateString:String) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat="yyyy-MM-dd'T'HH:mm:ssZ"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        if let date = dateFormatter.date(from: dateString){
+            
+            let timeAgoString = timeAgoSince(date)
+            
+            return timeAgoString
+        }else{
+            return "noDate"
+        }
+        
+    }
     
 }
 

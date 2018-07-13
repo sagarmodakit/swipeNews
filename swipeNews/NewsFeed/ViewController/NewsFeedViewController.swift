@@ -119,6 +119,14 @@ extension NewsFeedViewController : KolodaViewDataSource {
         
         if let sourceString = newsData.source?.sourceName {
             newsView.sourceLabel.text = "Source: \(sourceString)"
+        }else{
+            newsView.sourceLabel.isHidden = true
+        }
+        
+        if let timeString = newsData.publishDateTime {
+            newsView.publishedTimeLabel.text = APP_UTILS.timeAgoDateFromString(dateString: timeString)
+        }else{
+            newsView.publishedTimeLabel.isHidden = true
         }
         
         return newsView

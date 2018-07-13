@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NewsCardView" customModule="swipeNews">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sJo-QH-Hvt">
@@ -32,37 +32,49 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qLR-JN-1sg">
-                    <rect key="frame" x="16" y="317" width="288" height="144"/>
+                    <rect key="frame" x="16" y="317" width="288" height="115"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                     <color key="textColor" red="0.33392398151282532" green="0.33794716201297981" blue="0.33794716201297981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoC-LE-82D">
-                    <rect key="frame" x="16" y="469" width="288" height="21"/>
+                    <rect key="frame" x="16" y="490" width="288" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="IxS-Sy-SCk"/>
+                        <constraint firstAttribute="height" constant="21" id="0Ju-C6-gVY"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                     <color key="textColor" red="0.28554715223512972" green="0.28898747937049274" blue="0.28898747937049274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA3-tg-Sne">
+                    <rect key="frame" x="16" y="461" width="288" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Jmh-IW-mRe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                    <color key="textColor" red="0.28554715219999999" green="0.28898747940000002" blue="0.28898747940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.94004425507561828" green="0.95137008947411972" blue="0.95137008947411972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xoC-LE-82D" secondAttribute="bottom" constant="9" id="29h-0n-JEn"/>
+                <constraint firstItem="IA3-tg-Sne" firstAttribute="top" secondItem="qLR-JN-1sg" secondAttribute="bottom" constant="29" id="62t-2d-Fnm"/>
                 <constraint firstItem="sJo-QH-Hvt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6Pa-2V-noc"/>
-                <constraint firstItem="xoC-LE-82D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="H50-dd-mcW"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xoC-LE-82D" secondAttribute="bottom" constant="10" id="J6l-HU-W63"/>
-                <constraint firstItem="qLR-JN-1sg" firstAttribute="top" secondItem="Q38-fT-RYl" secondAttribute="bottom" constant="8" id="JBn-hg-YIZ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qLR-JN-1sg" secondAttribute="trailing" constant="16" id="Oqm-L5-7AL"/>
+                <constraint firstItem="xoC-LE-82D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="GPf-cp-X3t"/>
+                <constraint firstItem="qLR-JN-1sg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="L7M-oN-TBf"/>
+                <constraint firstItem="IA3-tg-Sne" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="NNM-Za-Laf"/>
+                <constraint firstItem="xoC-LE-82D" firstAttribute="top" secondItem="IA3-tg-Sne" secondAttribute="bottom" constant="8" id="NfQ-FW-sc2"/>
                 <constraint firstItem="Q38-fT-RYl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="QVJ-Xl-977"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sJo-QH-Hvt" secondAttribute="trailing" constant="16" id="Qb9-kG-dNZ"/>
                 <constraint firstItem="Q38-fT-RYl" firstAttribute="top" secondItem="sJo-QH-Hvt" secondAttribute="bottom" constant="8" id="SfH-c3-lpy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qLR-JN-1sg" secondAttribute="trailing" constant="16" id="Tnx-as-3Io"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IA3-tg-Sne" secondAttribute="trailing" constant="16" id="V60-LG-Wun"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xoC-LE-82D" secondAttribute="trailing" constant="16" id="Xui-fr-ARb"/>
                 <constraint firstItem="sJo-QH-Hvt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Yxf-4p-PpJ"/>
-                <constraint firstItem="qLR-JN-1sg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="eDF-Uj-HAI"/>
-                <constraint firstItem="xoC-LE-82D" firstAttribute="top" secondItem="qLR-JN-1sg" secondAttribute="bottom" constant="8" id="kXl-AW-P8R"/>
+                <constraint firstItem="qLR-JN-1sg" firstAttribute="top" secondItem="Q38-fT-RYl" secondAttribute="bottom" constant="8" id="gZb-9D-CvY"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Q38-fT-RYl" secondAttribute="trailing" constant="16" id="ugR-QP-jym"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xoC-LE-82D" secondAttribute="trailing" constant="16" id="unc-i5-27n"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -72,6 +84,7 @@
                 <outlet property="newsDescription" destination="qLR-JN-1sg" id="QqG-JA-HAa"/>
                 <outlet property="newsImageView" destination="sJo-QH-Hvt" id="L2x-bl-be6"/>
                 <outlet property="newsTitleLabel" destination="Q38-fT-RYl" id="C6u-qc-QSV"/>
+                <outlet property="publishedTimeLabel" destination="IA3-tg-Sne" id="mzZ-Kr-Qfg"/>
                 <outlet property="sourceLabel" destination="xoC-LE-82D" id="HdQ-F6-yYG"/>
             </connections>
             <point key="canvasLocation" x="13" y="167"/>

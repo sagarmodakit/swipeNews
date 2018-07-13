@@ -15,6 +15,7 @@
 		E94AFB7020F89E220023E624 /* NewsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94AFB6F20F89E220023E624 /* NewsCardView.xib */; };
 		E94AFB7220F8AD0A0023E624 /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94AFB7120F8AD0A0023E624 /* NewsFeedViewModel.swift */; };
 		E94AFB7420F8AD3E0023E624 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94AFB7320F8AD3E0023E624 /* NewsFeed.swift */; };
+		E94AFB7620F8C9F40023E624 /* TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94AFB7520F8C9F40023E624 /* TimeAgo.swift */; };
 		E9FCB13820F37A2800AA8E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCB13720F37A2800AA8E1F /* AppDelegate.swift */; };
 		E9FCB13A20F37A2800AA8E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCB13920F37A2800AA8E1F /* ViewController.swift */; };
 		E9FCB13D20F37A2800AA8E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FCB13B20F37A2800AA8E1F /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		E94AFB6F20F89E220023E624 /* NewsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardView.xib; sourceTree = "<group>"; };
 		E94AFB7120F8AD0A0023E624 /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
 		E94AFB7320F8AD3E0023E624 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		E94AFB7520F8C9F40023E624 /* TimeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAgo.swift; sourceTree = "<group>"; };
 		E9FCB13420F37A2800AA8E1F /* swipeNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swipeNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FCB13720F37A2800AA8E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FCB13920F37A2800AA8E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		E9FCB16B20F37C8B00AA8E1F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E94AFB7520F8C9F40023E624 /* TimeAgo.swift */,
 				E9FCB16E20F37CAA00AA8E1F /* Extensions */,
 				E9FCB16C20F37CA300AA8E1F /* AppUtils.swift */,
 			);
@@ -507,6 +510,7 @@
 			files = (
 				E94AFB7420F8AD3E0023E624 /* NewsFeed.swift in Sources */,
 				E9FCB13A20F37A2800AA8E1F /* ViewController.swift in Sources */,
+				E94AFB7620F8C9F40023E624 /* TimeAgo.swift in Sources */,
 				E9FCB17720F37D1000AA8E1F /* ApiModel.swift in Sources */,
 				E9FCB13820F37A2800AA8E1F /* AppDelegate.swift in Sources */,
 				E9FCB16A20F37ACC00AA8E1F /* NewsFeedViewController.swift in Sources */,
