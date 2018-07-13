@@ -13,8 +13,9 @@ class NewsCardView: UIView {
     @IBOutlet weak var newsImageView : UIImageView!
     
     @IBOutlet weak var newsTitleLabel : UILabel!
+    @IBOutlet weak var newsDescription : UITextView!
     
-    
+    @IBOutlet weak var sourceLabel: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

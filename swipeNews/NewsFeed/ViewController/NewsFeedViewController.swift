@@ -105,10 +105,20 @@ extension NewsFeedViewController : KolodaViewDataSource {
         
         
         if let imageUrlString = newsData.imageUrl {
-            newsView.newsImageView.sd_setImage(with: URL(string: imageUrlString), completed: nil)
+            newsView.newsImageView.sd_setImage(with: URL(string: imageUrlString), placeholderImage: UIImage(named: "newsPlaceholder"), options: SDWebImageOptions.refreshCached, completed: nil)
+        }else{
+            newsView.newsImageView.image = UIImage(named: "newsPlaceholder")
         }
         if let titleString = newsData.title {
             newsView.newsTitleLabel.text = titleString
+        }
+        
+        if let descriptionTitle = newsData.description {
+            newsView.newsDescription.text = descriptionTitle
+        }
+        
+        if let sourceString = newsData.source?.sourceName {
+            newsView.sourceLabel.text = "Source: \(sourceString)"
         }
         
         return newsView
