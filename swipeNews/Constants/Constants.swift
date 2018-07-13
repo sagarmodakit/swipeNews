@@ -26,8 +26,10 @@ let APP_UTILS = AppUtils.sharedInstance
 let topHeadlinesEndpoint = "/top-headlines"
 
 // parameters
-let countryParameter = "country"
-let apiKeyParameter = "apiKey"
+let kCountryParameter = "country"
+let kApiKeyParameter = "apiKey"
+let kStatusOK = "ok"
+let kStatusERROR = "error"
 
 
 

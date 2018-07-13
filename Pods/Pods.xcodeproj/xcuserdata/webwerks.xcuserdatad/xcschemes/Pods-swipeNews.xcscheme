@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69DEE49DF0C6BC9CC918E523C0A79C72"
+               BlueprintIdentifier = "FBBAFA07F781989DEF73390A85D9EDF5"
                BuildableName = "Pods_swipeNews.framework"
                BlueprintName = "Pods-swipeNews"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69DEE49DF0C6BC9CC918E523C0A79C72"
+            BlueprintIdentifier = "FBBAFA07F781989DEF73390A85D9EDF5"
             BuildableName = "Pods_swipeNews.framework"
             BlueprintName = "Pods-swipeNews"
             ReferencedContainer = "container:Pods.xcodeproj">

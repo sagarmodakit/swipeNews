@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (4.6.0)
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
   - ObjectMapper (3.1.0)
+  - pop (1.0.10)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
@@ -11,6 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Koloda
   - ObjectMapper
   - RxCocoa
   - RxSwift
@@ -20,7 +24,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Koloda
     - ObjectMapper
+    - pop
     - RxCocoa
     - RxSwift
     - SDWebImage
@@ -28,12 +34,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
   SVProgressHUD: a5eaeff664a82dda89809c409ace40183ce91523
 
-PODFILE CHECKSUM: 01e38310e60ff539a4dcd02f32b88f58d532d2d6
+PODFILE CHECKSUM: 4db1e26d04cefddd1a8c0cac977e53d202741b1f
 
 COCOAPODS: 1.5.0

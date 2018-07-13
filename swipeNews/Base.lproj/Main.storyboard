@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IHD-d7-LhU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IHD-d7-LhU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,10 +17,24 @@
                     <view key="view" contentMode="scaleToFill" id="wej-hc-fv4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTk-Wz-UiY" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="27" y="83" width="320" height="500"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rTk-Wz-UiY" firstAttribute="leading" secondItem="584-3r-xaz" secondAttribute="leading" constant="27" id="9gQ-ba-HNc"/>
+                            <constraint firstItem="rTk-Wz-UiY" firstAttribute="top" secondItem="584-3r-xaz" secondAttribute="top" constant="19" id="Aze-pJ-udP"/>
+                            <constraint firstItem="584-3r-xaz" firstAttribute="trailing" secondItem="rTk-Wz-UiY" secondAttribute="trailing" constant="28" id="xLl-LY-HaK"/>
+                            <constraint firstItem="584-3r-xaz" firstAttribute="bottom" secondItem="rTk-Wz-UiY" secondAttribute="bottom" constant="84" id="yHW-VK-Gvk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="584-3r-xaz"/>
                     </view>
                     <navigationItem key="navigationItem" title="NewsFeed" id="hO3-RU-OcD"/>
+                    <connections>
+                        <outlet property="newsSwipeView" destination="rTk-Wz-UiY" id="UvG-xf-OqH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yc-I7-yul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
